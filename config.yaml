@@ -1,0 +1,20 @@
+data:
+  sample_path: "data/sample/sample_data.csv"
+  output_log_path: "outputs/benchmark.log"
+
+variables:
+  independent:
+    - "boundary_blurring"
+    - "remote_intensity"
+  dependent: "burnout_score"
+  moderators:
+    - "schedule_autonomy"
+    - "psychological_detachment"
+  controls:
+    - "weekly_hours"
+    - "remote_experience_years"
+    - "age"
+
+execution:
+  alpha: 0.05
+  save_summary: true
