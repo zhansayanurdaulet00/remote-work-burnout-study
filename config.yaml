@@ -1,3 +1,4 @@
+
 data:
   sample_path: "data/sample/sample_data.csv"
   output_log_path: "outputs/benchmark.log"
