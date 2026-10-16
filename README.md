@@ -81,6 +81,25 @@ python src/main.py
 ```
 
 The script validates the sample data, computes descriptive statistics, and writes a log to `outputs/benchmark.log`.
+## Selected Metrics and Baseline
+
+### 1. Primary Metrics
+
+For Research Question 1, the primary metric is the regression coefficient (β) for work–life boundary blurring in the model predicting employee emotional burnout. A positive coefficient would indicate that greater boundary blurring is associated with higher burnout. The analysis will report the coefficient, 95% confidence interval, and p-value, using a significance level of α = 0.05.
+
+For Research Question 2, the primary metrics are the interaction coefficients between remote work intensity and schedule autonomy, and between remote work intensity and psychological detachment. Negative interaction coefficients would support the hypothesis that these factors weaken the relationship between remote work intensity and burnout.
+
+### 2. Guardrail Metrics
+
+The study will monitor data quality and statistical reliability using the percentage of missing values, the number of valid observations, multicollinearity diagnostics (VIF), regression assumption checks, and successful execution of the analysis pipeline. These checks help ensure that the results are reliable and reproducible.
+
+### 3. Baseline
+
+For Research Question 1, the baseline model will examine the association between work–life boundary blurring and burnout while controlling for the specified covariates.
+
+For Research Question 2, the baseline model will include remote work intensity, schedule autonomy, psychological detachment, and control variables. An extended model will add interaction terms to test the moderation hypotheses. Model fit will be compared between the baseline and extended models.
+
+The 10-row synthetic dataset is used only to test the data-processing pipeline and is not considered an empirical baseline or evidence supporting the hypotheses.
 
 ## Planned Statistical Analysis
 
